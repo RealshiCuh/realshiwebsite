@@ -1,0 +1,450 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Realshi - Modder & Coder" />
+  <title>Realshi's Bio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #0a0a0a;
+      color: #e0e0e0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background:
+        radial-gradient(circle at 20% 50%, rgba(229, 57, 53, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 87, 34, 0.03) 0%, transparent 50%);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .aK9 {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        linear-gradient(rgba(229, 57, 53, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(229, 57, 53, 0.03) 1px, transparent 1px);
+      background-size: 50px 50px;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    #bL2 {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(10, 10, 10, 0.95);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
+      backdrop-filter: blur(20px);
+    }
+
+    #bL2 h1 {
+      font-size: 3em;
+      color: #e53935;
+      margin-bottom: 0.5em;
+      font-weight: 700;
+      letter-spacing: -1px;
+      text-shadow: 0 0 30px rgba(229, 57, 53, 0.5);
+    }
+
+    #bL2 p {
+      font-size: 1.1em;
+      color: #aaa;
+      margin-bottom: 2em;
+      font-weight: 300;
+    }
+
+    #cM5 {
+      background: rgba(229, 57, 53, 0.1);
+      border: 2px solid #e53935;
+      padding: 1em 3em;
+      font-size: 1.2em;
+      font-weight: 600;
+      border-radius: 8px;
+      color: #e53935;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      backdrop-filter: blur(10px);
+    }
+
+    #cM5:hover {
+      background: #e53935;
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(229, 57, 53, 0.6);
+    }
+
+    .dN8 {
+      background: rgba(20, 20, 20, 0.9);
+      backdrop-filter: blur(10px);
+      padding: 1.2em 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(229, 57, 53, 0.2);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .eO1 {
+      display: flex;
+      gap: 1.5em;
+      align-items: center;
+    }
+
+    .eO1 a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.6em 1.2em;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      font-size: 0.95em;
+    }
+
+    .eO1 a:hover {
+      background: rgba(229, 57, 53, 0.1);
+      color: #e53935;
+    }
+
+    .eO1 a.fP4 {
+      background: #e53935;
+      color: white;
+    }
+
+    #gQ7 {
+      background: rgba(229, 57, 53, 0.1);
+      border: 1px solid rgba(229, 57, 53, 0.3);
+      color: #e53935;
+      padding: 0.6em 1.2em;
+      border-radius: 6px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 0.9em;
+    }
+
+    #gQ7:hover {
+      background: #e53935;
+      color: white;
+      border-color: #e53935;
+    }
+
+    .hR0 {
+      max-width: 1000px;
+      margin: 3em auto;
+      padding: 2em;
+      position: relative;
+      z-index: 1;
+    }
+
+    .iS3 {
+      text-align: center;
+      margin-bottom: 3em;
+    }
+
+    .iS3 img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 3px solid #e53935;
+      margin-bottom: 1.5em;
+      object-fit: cover;
+    }
+
+    .iS3 h1 {
+      font-size: 2.5em;
+      color: #fff;
+      margin-bottom: 0.3em;
+      font-weight: 700;
+    }
+
+    .iS3 .jT6 {
+      font-size: 1.1em;
+      color: #999;
+    }
+
+    .kU9 {
+      background: rgba(30, 30, 30, 0.6);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(229, 57, 53, 0.2);
+      border-radius: 12px;
+      padding: 1.8em;
+      margin-bottom: 1.5em;
+      transition: all 0.3s ease;
+    }
+
+    .kU9:hover {
+      border-color: rgba(229, 57, 53, 0.5);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .kU9 h2 {
+      font-size: 1.5em;
+      color: #e53935;
+      margin-bottom: 1em;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+    }
+
+    .kU9 h2::before {
+      content: "";
+      width: 4px;
+      height: 1.2em;
+      background: #e53935;
+      border-radius: 2px;
+    }
+
+    .kU9 p {
+      color: #ccc;
+      font-size: 1em;
+      margin-bottom: 0.8em;
+      line-height: 1.7;
+    }
+
+    .kU9 p:last-child {
+      margin-bottom: 0;
+    }
+
+    .lV2 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8em;
+      margin-top: 1em;
+    }
+
+    .mW5 {
+      background: rgba(229, 57, 53, 0.1);
+      border: 1px solid rgba(229, 57, 53, 0.3);
+      padding: 0.5em 1em;
+      border-radius: 20px;
+      font-size: 0.9em;
+      color: #e53935;
+      font-weight: 500;
+    }
+
+    .nX8 {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8em;
+      margin-top: 1em;
+    }
+
+    .oY1 {
+      background: rgba(20, 20, 20, 0.6);
+      padding: 1em;
+      border-radius: 8px;
+      border-left: 3px solid #e53935;
+      font-family: 'Courier New', monospace;
+      color: #e0e0e0;
+    }
+
+    .pZ4 {
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+      background: rgba(20, 20, 20, 0.6);
+      border-radius: 8px;
+      border: 1px solid rgba(229, 57, 53, 0.2);
+    }
+
+    .pZ4 span {
+      font-weight: 600;
+    }
+
+    .pZ4 .qA7 {
+      color: #4caf50;
+    }
+
+    .pZ4 .rB0 {
+      color: #f44336;
+    }
+
+    footer.sC3 {
+      text-align: center;
+      padding: 2em 1em;
+      color: #666;
+      font-size: 0.9em;
+      border-top: 1px solid rgba(229, 57, 53, 0.1);
+      margin-top: 3em;
+    }
+
+    @media (max-width: 768px) {
+      .dN8 {
+        flex-direction: column;
+        gap: 1em;
+      }
+      .eO1 {
+        flex-direction: column;
+        width: 100%;
+      }
+      .eO1 a {
+        width: 100%;
+        text-align: center;
+      }
+      .hR0 {
+        padding: 1em;
+      }
+      .iS3 h1 {
+        font-size: 2em;
+      }
+      #bL2 h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="aK9"></div>
+
+  <div id="bL2">
+    <h1>Welcome</h1>
+    <p>Click below to enter</p>
+    <button id="cM5">Enter Site</button>
+  </div>
+
+  <nav class="dN8">
+    <div class="eO1">
+      <a href="index.html" class="fP4">Home</a>
+      <a href="https://discord.gg/moddinghub" target="_blank" rel="noopener noreferrer">Discord</a>
+    </div>
+    <button id="gQ7">Mute Music</button>
+  </nav>
+
+  <div class="hR0">
+    <div class="iS3">
+      <img
+        src="https://i.postimg.cc/WzMfmhVM/5d64cf9fdb323544d5bd134ad7a00c23.webp"
+        alt="Profile Picture"
+      />
+      <h1>Realshi</h1>
+      <p class="jT6">Modder & Developer</p>
+    </div>
+
+    <div class="kU9">
+      <h2>About Me</h2>
+      <p>I'm Realshi.</p>
+      <p>I code, mod games, don't really answer DMs unless needed. Thanks for visiting.</p>
+    </div>
+
+    <div class="kU9">
+      <h2>Accounts</h2>
+      <p>Here are my accounts. If you see anyone else claiming to be me, they're larping.</p>
+      <div class="nX8">
+        <div class="oY1">.xd.kat (Main acc)</div>
+        <div class="oY1">tear.xd (2nd acc)</div>
+      </div>
+      <p style="margin-top: 1em; color: #999; font-size: 0.95em;">
+        If I make any other accounts, I'll add them here.
+      </p>
+    </div>
+
+    <div class="kU9">
+      <h2>Server Status</h2>
+      <p>Server is no longer limited</p>
+    </div>
+
+    <div class="kU9">
+      <h2>Coding Languages</h2>
+      <p>Languages I work with:</p>
+      <div class="lV2">
+        <span class="mW5">C++</span>
+        <span class="mW5">C#</span>
+        <span class="mW5">Python</span>
+        <span class="mW5">HTML</span>
+        <span class="mW5">Lua</span>
+        <span class="mW5">Batch</span>
+      </div>
+    </div>
+
+    <div class="pZ4">
+      Status: <span id="tD6">Checking...</span>
+    </div>
+
+    <footer class="sC3">
+      <p>Realshi 2025</p>
+    </footer>
+  </div>
+
+  <iframe
+    id="uE9"
+    width="0"
+    height="0"
+    src=""
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+    style="display: none;"
+  ></iframe>
+
+  <script>
+    const overlay = document.getElementById('bL2');
+    const enterButton = document.getElementById('cM5');
+    const musicFrame = document.getElementById('uE9');
+    const muteButton = document.getElementById('gQ7');
+    const statusText = document.getElementById('tD6');
+
+    let muted = false;
+
+    enterButton.addEventListener('click', () => {
+      musicFrame.src =
+        'https://www.youtube.com/embed/rK2qmQgtJ_E?autoplay=1&loop=1&playlist=rK2qmQgtJ_E&controls=0&mute=0&modestbranding=1';
+      overlay.style.display = 'none';
+    });
+
+    muteButton.addEventListener('click', () => {
+      muted = !muted;
+      musicFrame.src = `https://www.youtube.com/embed/rK2qmQgtJ_E?autoplay=1&loop=1&playlist=rK2qmQgtJ_E&controls=0&mute=${muted ? 1 : 0}&modestbranding=1`;
+      muteButton.textContent = muted ? 'Unmute Music' : 'Mute Music';
+    });
+
+    function updateStatus() {
+      if (navigator.onLine) {
+        statusText.textContent = 'Online';
+        statusText.className = 'qA7';
+      } else {
+        statusText.textContent = 'Offline';
+        statusText.className = 'rB0';
+      }
+    }
+
+    window.addEventListener('online', updateStatus);
+    window.addEventListener('offline', updateStatus);
+    updateStatus();
+  </script>
+</body>
+</html>
